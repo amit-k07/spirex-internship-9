@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Color Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>NEON COLOR STUDIO</h1>
+        <p class="subtitle">Choose your vibe. Change your world.</p>
+
+        <div class="preview" id="preview">
+            <h2>COLOR PREVIEW</h2>
+            <h3 id="colorCode">#101322</h3>
+        </div>
+
+        <h2 class="heading">Choose a Color</h2>
+
+        <div class="color-box">
+
+            <button class="color-btn red"
+                onclick="changeColor('#ff3158', 'Cherry Red')">
+                Cherry Red
+            </button>
+
+            <button class="color-btn green"
+                onclick="changeColor('#39e75f', 'Neon Green')">
+                Neon Green
+            </button>
+
+            <button class="color-btn blue"
+                onclick="changeColor('#287bff', 'Electric Blue')">
+                Electric Blue
+            </button>
+
+            <button class="color-btn yellow"
+                onclick="changeColor('#ffdf35', 'Sunshine Yellow')">
+                Sunshine Yellow
+            </button>
+
+            <button class="color-btn purple"
+                onclick="changeColor('#a855f7', 'Purple Glow')">
+                Purple Glow
+            </button>
+
+            <button class="color-btn cyan"
+                onclick="changeColor('#00d5d5', 'Ocean Cyan')">
+                Ocean Cyan
+            </button>
+
+        </div>
+
+        <div class="action-buttons">
+            <button class="random" onclick="randomColor()">
+                Random Color
+            </button>
+
+            <button class="reset" onclick="resetColor()">
+                Reset
+            </button>
+        </div>
+
+        <p class="selected" id="selectedColor">
+            Selected: Default
+        </p>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
