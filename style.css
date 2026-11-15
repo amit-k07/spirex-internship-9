@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #101322;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: background-color 0.5s ease;
+}
+
+.container {
+    width: 100%;
+    max-width: 550px;
+    background-color: #191f35;
+    padding: 30px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    color: #00e5ff;
+    font-size: 28px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    color: #a9b0c7;
+    margin-bottom: 25px;
+}
+
+.preview {
+    background-color: #101322;
+    height: 140px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    border: 2px solid #353d59;
+    transition: background-color 0.5s ease;
+}
+
+.preview h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.preview h3 {
+    color: white;
+    font-size: 22px;
+}
+
+.heading {
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+.color-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.color-btn {
+    padding: 14px 5px;
+    border: none;
+    border-radius: 9px;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.color-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.red {
+    background-color: #ff3158;
+}
+
+.green {
+    background-color: #39b95a;
+}
+
+.blue {
+    background-color: #287bff;
+}
+
+.yellow {
+    background-color: #d6ad00;
+    color: black;
+}
+
+.purple {
+    background-color: #a855f7;
+}
+
+.cyan {
+    background-color: #00aeb0;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 22px;
+}
+
+.action-buttons button {
+    flex: 1;
+    padding: 13px;
+    border: none;
+    border-radius: 9px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.random {
+    background-color: #8e44ad;
+    color: white;
+}
+
+.reset {
+    background-color: #343b52;
+    color: white;
+}
+
+.action-buttons button:hover {
+    transform: scale(1.05);
+    opacity: 0.85;
+}
+
+.selected {
+    color: #a9b0c7;
+    margin-top: 22px;
+    font-size: 14px;
+}
+@media (max-width: 480px) {
+
+    .container {
+        padding: 22px 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .color-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .color-btn {
+        padding: 13px 5px;
+    }
+}
+
